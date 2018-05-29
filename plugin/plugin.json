@@ -1,6 +1,6 @@
 {
   "publicComponents": {
-    "wxparser": "components/wxparser/wxparser"
+    "simditor-style": "components/wxparser/wxparser"
   },
   "main": "index.js"
 }

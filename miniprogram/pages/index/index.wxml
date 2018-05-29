@@ -1,2 +1,2 @@
 <button bind:tap="changeContent">change content</button>
-<wxparser rich-text="{{richText}}" bind:tapImg="tapWxParserImg" bind:tapLink="tapWxParserLink"></wxparser>
+<simditor-style rich-text="{{richText}}" bind:tapImg="tapWxParserImg" bind:tapLink="tapWxParserLink"></simditor-style>
