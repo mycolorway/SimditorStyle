@@ -72,6 +72,7 @@
   border: 1px solid #e8e8e8;
   border-radius: 6rpx;
   overflow-x: auto;
+  white-space: pre;
 }
 
 .wxParser-code {
@@ -186,6 +187,11 @@
 .wxParser-ul,
 .wxParser-ol {
   margin: 30rpx 0;
+}
+
+.wxParser-ul .wxParser-pre,
+.wxParser-ol .wxParser-pre {
+  white-space: normal;
 }
 
 .wxParser-ul .wxParser-div,
