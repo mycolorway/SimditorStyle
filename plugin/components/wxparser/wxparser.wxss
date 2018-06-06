@@ -3,17 +3,14 @@
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   line-height: 1.6;
   color: #333;
-  outline: none;
   overflow-x: auto;
 }
 
 .wxParser-div,
-.wxParser-p,
-{
+.wxParser-p {
   margin: 0 0 32rpx 0;
   word-wrap: break-word;
   word-break: normal;
-  max-width: 100%;
 }
 
 .wxParser-inline {
@@ -25,35 +22,32 @@
 .wxParser-h1 {
   margin: 0.67em 0;
   font-size: 1.8em;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 1.2;
 }
 
 .wxParser-h2 {
-   margin: 0.83em 0;
+  margin: 0.83em 0;
   font-size: 1.5em;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 1.2;
 }
 
 .wxParser-h3 {
   margin: 1em 0;
   font-size: 1.2em;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 1.2;
 }
 
 .wxParser-h4,
 .wxParser-h5,
 .wxParser-h6 {
-   margin: 1.6em 0 1em;
+  margin: 1.6em 0 1em;
   font-size: 1em;
-  font-weight: normal;
+  font-weight: 500;
 }
 
-.wxParser-h1,
-.wxParser-h2,
-.wxParser-h3,
 .wxParser-b,
 .wxParser-strong {
   font-weight: 500;
@@ -68,16 +62,34 @@
 }
 
 .wxParser-pre {
-  margin: 1.64em 0;
-  padding: 7px 10px;
+  margin: 30rpx 0;
+  padding: 14rpx 20rpx;
   line-height: 1.5;
-  font-size: 0.9em;
+  font-size: 24rpx;
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
   color: #4c4c4c;
-  white-space: pre;
-  background-color: #e8e8e8;
+  background-color: #f9f9f9;
+  border: 1px solid #e8e8e8;
+  border-radius: 6rpx;
+  overflow-x: auto;
+}
+
+.wxParser-code {
+  display: inline-block;
+  margin: 0 8rpx;
+  padding: 0 8rpx;
+  font-size: 24rpx;
+  vertical-align: middle;
+  background-color: #eeeeee;
+  border-radius: 6rpx;
+}
+
+.wxParser-pre .wxParser-code {
+  display: block;
+  margin: 0;
+  padding: 0;
   border-radius: 0;
-  overflow: auto;
+  background: transparent;
 }
 
 .wxParser-pre,
@@ -162,25 +174,30 @@
 
 .wxParser-blockquote {
   margin: 20rpx 0;
-  padding: 0 0 0 20rpx;
+  padding: 0 0 0 30rpx;
   border-left: 12rpx solid #e8e8e8;
 }
 
 .wxParser-blockquote .wxParser-div,
 .wxParser-blockquote .wxParser-p {
-  margin: 10rpx 0;
+  margin: 20rpx 0;
 }
 
 .wxParser-ul,
 .wxParser-ol {
   margin: 30rpx 0;
-  padding: 0 0 0 40rpx;
-  line-height: 1.6;
+}
+
+.wxParser-ul .wxParser-div,
+.wxParser-ul .wxParser-p,
+.wxParser-ol .wxParser-div,
+.wxParser-ol .wxParser-p {
+  margin: 10rpx 0;
 }
 
 .wxParser-li,
 .wxParser-ol-li {
-  margin-bottom: 8rpx;
+  margin-bottom: 10rpx;
 }
 
 .wxParser-li .wxParser-ul,
@@ -196,28 +213,15 @@
   align-items: baseline;
 }
 
-.wxParser-li-text {
-  align-items: center;
-}
-
-.wxParser-li-circle {
-  display: inline-flex;
-  width: 10rpx;
-  height: 10rpx;
-  background-color: #333;
-  margin-right: 12rpx;
-  border-radius: 50%;
-}
-
 .wxParser-ol-li,
 .wxParser-ol-li-inner {
   display: flex;
   align-items: baseline;
 }
 
+.wxParser-li-text,
 .wxParser-ol-li-text {
-  margin-right: 12rpx;
-  line-height: 32rpx;
+  margin-left: 12rpx;
 }
 
 .wxParser-hidden {
