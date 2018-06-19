@@ -124,6 +124,9 @@ const html2json = html => {
 
       // img 标签 添加额外数据
       if (node.tag === 'img') {
+        if (node.attr.src.includes('s.tower.im/emoji')) {
+          node.classStr = 'img-emoji'
+        }
         node.imgIndex = results.images.length;
         results.images.push(node);
         results.imageUrls.push(node.attr.src);

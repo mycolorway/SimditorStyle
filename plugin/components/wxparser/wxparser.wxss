@@ -1,14 +1,14 @@
 .wxParser {
-  font-size: 32rpx;
+  font-size: 36rpx;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  line-height: 1.6;
+  line-height: 1.8;
   color: #333;
   overflow-x: auto;
 }
 
 .wxParser-div,
 .wxParser-p {
-  margin: 0 0 32rpx 0;
+  margin: 0 0 1.2em 0;
   word-wrap: break-word;
   word-break: normal;
 }
@@ -19,22 +19,28 @@
   padding: 0;
 }
 
+.wxParser-h1,
+.wxParser-h2,
+.wxParser-h3,
+.wxParser-h4,
+.wxParser-h5,
+.wxParser-h6 {
+  margin: 1.2em 0 0.6em;
+}
+
 .wxParser-h1 {
-  margin: 0.67em 0;
   font-size: 1.8em;
   font-weight: 500;
   line-height: 1.2;
 }
 
 .wxParser-h2 {
-  margin: 0.83em 0;
   font-size: 1.5em;
   font-weight: 500;
   line-height: 1.2;
 }
 
 .wxParser-h3 {
-  margin: 1em 0;
   font-size: 1.2em;
   font-weight: 500;
   line-height: 1.2;
@@ -43,7 +49,6 @@
 .wxParser-h4,
 .wxParser-h5,
 .wxParser-h6 {
-  margin: 1.6em 0 1em;
   font-size: 1em;
   font-weight: 500;
 }
@@ -62,8 +67,8 @@
 }
 
 .wxParser-pre {
-  margin: 30rpx 0;
-  padding: 14rpx 20rpx;
+  margin: 1.2em 0;
+  padding: 0.6em 1.2em;
   line-height: 1.5;
   font-size: 24rpx;
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
@@ -102,13 +107,13 @@
 }
 
 .wxParser-big {
-  font-size: 1.17em
+  font-size: 1.17em;
 }
 
 .wxParser-small,
 .wxParser-sub,
 .wxParser-sup {
-  font-size: .83em
+  font-size: .83em;
 }
 
 .wxParser-sub {
@@ -166,27 +171,36 @@
 
 .wxParser-img {
   display: block;
-  margin: 8rpx 0;
+  margin: 0.2em 0;
   overflow: hidden;
   max-width: 100%;
   width: auto;
   height: auto;
 }
 
+.wxParser-img.img-emoji {
+  display: inline-block;
+  margin: 0;
+  width: 40px;
+  height: 40px;
+  vertical-align: text-bottom;
+}
+
 .wxParser-blockquote {
-  margin: 20rpx 0;
-  padding: 0 0 0 30rpx;
-  border-left: 12rpx solid #e8e8e8;
+  margin: 1.2em 0;
+  padding-left: 0.6em;
+  font-size: 32rpx;
+  border-left: 0.3em solid #e8e8e8;
 }
 
 .wxParser-blockquote .wxParser-div,
 .wxParser-blockquote .wxParser-p {
-  margin: 20rpx 0;
+  margin: 0.6em 0;
 }
 
 .wxParser-ul,
 .wxParser-ol {
-  margin: 30rpx 0;
+  margin: 1.2em 0;
 }
 
 .wxParser-ul .wxParser-pre,
