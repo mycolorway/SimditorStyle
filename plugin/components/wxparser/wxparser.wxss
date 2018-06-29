@@ -1,5 +1,5 @@
 .wxParser {
-  font-size: 36rpx;
+  font-size: 32rpx;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   line-height: 1.8;
   color: #333;
